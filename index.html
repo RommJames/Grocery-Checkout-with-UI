@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Checkout</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="products">
+            <header>
+                <h1>Products</h1>
+                <i>Click the Item to Scan</i>
+            </header>            
+            <div id="items">
+            </div>
+        </div>
+        <div id="monitor">
+            <header>
+                <h1>Monitor</h1>
+                <button id="reset"> Remove All </button>
+            </header>            
+            <table id="monitor-details">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price</th>                        
+                    </tr>
+                </thead>            
+            </table>
+        </div>
+        <div id="receipt">
+            <div id="official-receipt">
+                <h1>Romm James Grocery Store</h1>
+                <hr>
+                <h2>Receipt </h2>
+                <div>
+                    <b>Date: </b>
+                    <i id="date-value"></i>
+                </div>
+                <div>
+                    <b>Time: </b>
+                    <i id="time-value"></i>
+                </div>
+                <hr>
+                <table id="receipt-details">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>            
+                </table>
+
+                <h2>Thank You!</h2>
+
+            </div>
+            <button id="print-receipt">Print Receipt</button>            
+        </div>
+    </div>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> -->
+<script src="src/html2canvas.min.js"></script>
+<script type="module" src="index.js" defer></script>
+</body>
+</html>
